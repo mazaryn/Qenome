@@ -1,0 +1,140 @@
+[package]
+authors = ['Mazaryn Team https://github.com/mazaryn/Qenome']
+build = 'build.rs'
+description = 'QenomeTrade: Orderbook based Decentralized Chain'
+edition = '2018'
+homepage = 'https://github.com/mazaryn/Qenome'
+license = 'Apache 2.0'
+name = 'node-qenome'
+repository = 'https://github.com/mazaryn/Qenome'
+version = '2.0.0'
+
+[package.metadata.docs.rs]
+targets = ['x86_64-unknown-linux-gnu']
+
+[[bin]]
+name = 'node-qenome'
+
+
+[dependencies.node-qenome-runtime]
+path = '../runtime'
+version = '2.0.0'
+
+[dependencies.pallet-transaction-payment-rpc]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sc-basic-authorship]
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sc-client-api]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sc-consensus]
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sc-consensus-slots]
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sc-consensus-babe]
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sc-executor]
+features = ['wasmtime']
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sc-finality-grandpa]
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sc-rpc]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sc-rpc-api]
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sc-service]
+features = ['wasmtime']
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sc-transaction-pool]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sp-api]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sp-block-builder]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sp-blockchain]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sp-consensus]
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sp-consensus-babe]
+git = 'https://github.com/paritytech/substrate.git'
+version = '0.8.0'
+
+[dependencies.sp-core]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sp-finality-grandpa]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sp-inherents]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sp-runtime]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sp-transaction-pool]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.substrate-frame-rpc-system]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.frame-benchmarking]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.frame-benchmarking-cli]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'
+
+[dependencies.sc-cli]
+git = 'https://github.com/paritytech/substrate.git'
+features = ['wasmtime']
+version = '0.8.0'
+
+[dependencies]
+jsonrpc-core = '15.0.0'
+structopt = '0.3.8'
+
+rpc = { path = "../pallets/qenome/rpc" }
+runtime-api = { path = "../pallets/qenome/runtime-api" }
+
+
+[build-dependencies.substrate-build-script-utils]
+git = 'https://github.com/paritytech/substrate.git'
+version = '2.0.0'

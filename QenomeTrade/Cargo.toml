@@ -1,0 +1,11 @@
+[profile.release]
+panic = 'unwind'
+
+[workspace]
+members = [
+    'node',
+    'pallets/qenome',
+    'runtime',
+    'pallets/qenome/runtime-api',
+
+]
