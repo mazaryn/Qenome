@@ -3,4 +3,5 @@
 #![forbid(unsafe_code)]
 
 mod entrypoint;
+pub mod account;
 pub mod processor;
