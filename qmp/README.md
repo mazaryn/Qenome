@@ -1,1 +1,1 @@
-Qenome MarketPlace based on Solana Blockchain :)
+Qenome Distributed Marketplace based on Solana Blockchain :)
