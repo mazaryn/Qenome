@@ -2,7 +2,7 @@
 name = "qmp"
 version = "0.1.0"
 authors = ["Mazaryn Team"]
-repository = "https://github.com/Qenome/qenome_market"
+repository = "https://github.com/Qenome/qmp"
 license = "Apache-2.0"
 edition = "2018"
 
